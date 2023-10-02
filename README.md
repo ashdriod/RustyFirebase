@@ -27,3 +27,40 @@ This application uses the following Rust crates:
 - `tokio`: An async runtime for Rust.
 
 Make sure to add these to your `Cargo.toml`.
+
+## Usage
+
+Run the application using:
+cargo run
+
+## The application will:
+
+- Add a sample user to Firebase.
+- Retrieve and display the added user.
+- Retrieve and display all users.
+- Update the email of the added user and display the updated user.
+- Delete the user.
+
+## Code Structure
+
+### Structs:
+- **User**: Represents the data model.
+- **Response**: Represents the Firebase response after creating a user.
+
+### Main Function:
+- Sets up a sample user and demonstrates the CRUD operations.
+
+### CRUD Functions:
+- **set_user**: Adds a user to Firebase.
+- **get_users**: Retrieves all users.
+- **get_user**: Retrieves a user by ID.
+- **update_user**: Modifies user details.
+- **delete_user**: Removes a user.
+
+### Utility Functions:
+- **string_to_response**: Converts a JSON string to a Response object.
+- **string_to_user**: Converts a JSON string to a User object.
+
+## Contributions
+
+Contributions are welcome! Feel free to submit a pull request.
